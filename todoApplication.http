@@ -1,0 +1,30 @@
+### API 1
+GET http://localhost:3000/todos/?status=TO%20DO
+
+### API 2
+GET http://localhost:3000/todos/1/
+
+### API 3
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 10,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+
+### API 4
+PUT http://localhost:3000/todos/1/
+Content-Type: application/json
+
+{ "status": "DONE" }
+//{ "priority": "HIGH" }
+//{ "todo": "Some task" }
+
+
+### API 5
+DELETE http://localhost:3000/todos/2/
+
+
